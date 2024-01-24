@@ -1,0 +1,36 @@
+.swiper-slide-active-glow {
+  /* Your glow effect styles go here */
+  box-shadow: 0 0 50px rgba(0, 255, 255, 0.8);
+  transition: box-shadow 0.3s ease;
+  border-radius: 15px; 
+}
+
+
+.mySwiper .swiper-slide {
+    transition: transform 0.3s ease; 
+  }
+
+
+  .mySwiper .swiper-slide-prev {
+    transform: scale(0.75); 
+  }
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) { 
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+
+
+
+  

@@ -1,0 +1,66 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.vertical-dashed-line {
+  margin-left: 680px;
+}
+
+.vertical-solid-line {
+  margin-left: 680px;
+}
+
+.timeline-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.timeline-card {
+  margin-top: 250px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .timeline-circle {
+    left: 10px;
+    transition: top 15s ease, opacity 1.5s ease;
+  }
+
+  .vertical-dashed-line {
+    margin-left: 10px;
+  }
+
+  .vertical-solid-line {
+    margin-left: 10px;
+    transition: top 1.5s ease;
+  }
+
+  .timeline-card-container {
+    grid-template-columns: 1fr;
+    grid-row-gap: 100px;
+    margin-left: 10px;
+  }
+
+  .timeline-card {
+    margin-top: 10px;
+    grid-column: 1;
+    margin-left: 0;
+    grid-column-gap: 10px;
+  }
+}
+
+.vertical-solid-line.glow {
+  box-shadow: 0 5px 60px rgba(17, 172, 228, 1);
+  /* width: 5px; */
+  border-radius: 10%; /* Adjust the border-radius value as needed */
+  transition: transform 0.3s, box-shadow 0.3s, border-radius 0.3s;
+}
+
+.heading {
+  text-shadow: 0 0 0.75em #1da9cc;
+}
+.custom-timeline-card {
+  transition: translate3d(-20px, -20px, -20px);
+}

@@ -1,0 +1,119 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #000509;
+  /* height: 100%; */
+  font-family: 'PT Sans', sans-serif;
+  background-image: url(./images/bgstars.svg);
+  background-repeat: repeat;
+}
+
+label {
+  color: white;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* .headline {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 10vw;
+} */
+
+.inset {
+  position: absolute;
+  inset: 0;
+}
+
+.white {
+  color: white;
+}
+
+.gray {
+  color: #446;
+}
+
+.full {
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradient {
+  background: linear-gradient(rgba(14, 62, 151, 0.5) 50%, black);
+}
+
+
+/*hackathon form bg*/
+#hackathonleft {
+  background-image: url(./images/hackathonformbg.png);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#devsprintevents {
+  background-image: url(./images/mountainevent.svg);
+  background-size: 100%;
+  background-repeat: repeat-x;
+  /* background-position-y: 30rem; */
+  background-position: bottom;
+}
+
+#aboutbox1 {
+  background-image: url(./images/aboutbox1.svg);
+  background-size: 100%;
+}
+
+#hackathonpage {
+  background-image: url(./images/bgstars.svg);
+}
+
+/*glass effect*/
+#glasseffect {
+  /* background-color: rgba(255,255,255,0.3); */
+  /* backdrop-filter: blur(10px); */
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 2;
+  fill: radial-gradient(231% 135.8% at -1.23% 2.98%, rgba(255, 255, 255, 0.11) 16.81%, rgba(255, 255, 255, 0.04) 99.34%);
+  stroke-width: 2.419px;
+  stroke: rgba(255, 255, 255, 0.48);
+  backdrop-filter: blur(9.93449592590332px);
+}
+
+#glasseffect2{
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 2;
+  fill: radial-gradient(231% 135.8% at -1.23% 2.98%, rgba(255, 255, 255, 0.11) 16.81%, rgba(255, 255, 255, 0.04) 99.34%);
+  stroke-width: 2.419px;
+  stroke: rgba(255, 255, 255, 0.48);
+  backdrop-filter: blur(4.93449592590332px);
+}
+
+#eventsbg{
+  background-image: url(./images/eventsbg.png);
+}
+
+#shadowcard{
+  box-shadow: 0 0 25px 10px rgba(63, 57, 57, 0.8);
+}
+#shadowcard:hover{
+  box-shadow: 0 0 35px 20px rgba(103, 96, 96, 0.9);
+}
+#linesbg{
+  background-image: url(./images/linesbg.png);
+}
