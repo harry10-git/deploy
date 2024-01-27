@@ -128,12 +128,14 @@ app.patch('/update-google-data/:id', async (req, res) => {
 
 app.post('/register-user' , async (req, res) => {
     try {
-        user = new userdb(
-            req.body,
-        );
-
-        await user.save();
-        res.status(200).json(user)
+        let user = await userdb.findOne({ email: req.body.email });
+        if (!user) {
+            user = new userdb(
+                req.body,
+            );
+            await user.save();
+            res.status(200).json(user)
+        }
     } catch (error) {
         res.status(400).json({ error: error.message })
     }

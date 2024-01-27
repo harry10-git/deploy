@@ -57,7 +57,7 @@ const TechTalk = () => {
             An MIT Manipal alumni, Dale was awarded the prestigious Dr. T.M.A.
             Pai Gold Medal for Computer Engineering - Batch of 2000. <br />
             He is a visionary entrepreneur and the
-            <span className="text-blue-400"> co-founder of Aaritya </span>, a
+            <span className="text-blue-400"> founder of Aaritya </span>, a
             start-up whose mission is to empower individual Investors by giving
             them pro grade tools without the complexity and clutter.
           </p>

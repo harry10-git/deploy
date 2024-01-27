@@ -88,13 +88,13 @@ export default function Footer() {
           </div>
           {/* <h4 className="text-white p-5 text-center">Contact Us:</h4> */}
           <div className="flex justify-center gap-3">
-            <a href="https://www.instagram.com/iste_manipal?igsh=MWxmaG5zeTlnMms3aw==">
+            <a href="https://www.instagram.com/iste_manipal?igsh=MWxmaG5zeTlnMms3aw==" target="_blank" rel="noopener noreferrer">
               <button className="relative top-[0.3rem] p-1">
                 <img src={instagram} alt="hdu" />
               </button>
             </a>
 
-            <a href="https://www.linkedin.com/company/iste-manipal/">
+            <a href="https://www.linkedin.com/company/iste-manipal/" target="_blank" rel="noopener noreferrer">
               <button className="p-2">
                 <img src={linkedin} alt="hdusdvsf" />
               </button>

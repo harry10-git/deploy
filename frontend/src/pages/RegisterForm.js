@@ -23,6 +23,19 @@ export default function RegisterForm() {
     height: '', // Adjust the height as needed
   }
 
+  const submissionProgress = () => {
+    toast.info('Submission in Progress...', {
+      position: 'top-right',
+      autoClose: 2500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+    })
+  }
+
   const notify = () => {
     toast.success('Successfully Registered, Login again to continue', {
       position: 'top-right',
@@ -120,6 +133,7 @@ export default function RegisterForm() {
     // console.log(formData);
 
     try {
+      submissionProgress()
       await registerUser()
       try {
         const response = await fetch(`/update-google-data/${googleData._id}`, {

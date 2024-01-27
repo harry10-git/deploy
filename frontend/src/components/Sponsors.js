@@ -5,7 +5,6 @@ import spons3 from "../images/spons3.svg";
 import spons4 from "../images/spons4.svg";
 import spons5 from "../images/spons5.svg";
 import spons6 from "../images/spons6.svg";
-import spons7 from "../images/spons7.svg";
 import spons8 from "../images/spons8.svg";
 import spons9 from "../images/spons9.svg";
 import TitleStuff from "./Title_Stuff";
@@ -41,7 +40,6 @@ export default function Sponsors() {
         <img src={spons4} alt="h" className="lg:w-full w-[8rem]" />
         <img src={spons5} alt="h" className="lg:w-full w-[8rem]" />
         <img src={spons6} alt="h" className="lg:w-full w-[8rem]" />
-        <img src={spons7} alt="h" className="lg:w-full w-[8rem]" />
         <img src={spons8} alt="h" className="lg:w-full w-[8rem]" />
         <img src={spons9} alt="h" className="lg:w-full w-[8rem" />
       </div>

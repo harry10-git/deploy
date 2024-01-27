@@ -175,21 +175,21 @@ function HackathonForm() {
               <img src={calen} alt="h"></img>
               <span className="pt-2 [font-family:'Inter-Medium',Helvetica] font-semibold">
                 {' '}
-                02 February 2024
+                11th February 2024
               </span>
             </div>
             <div className="pl-10 flex flex-row">
               <img src={clock} alt="h"></img>
               <span className="pt-2 [font-family:'Inter-Medium',Helvetica] font-semibold">
                 {' '}
-                12:30 PM
+                8:00 AM to 10:00 PM
               </span>
             </div>
             <div className="pl-10 flex flex-row">
               <img src={loc} alt="h"></img>
               <span className="pt-2 [font-family:'Inter-Medium',Helvetica] font-semibold">
                 {' '}
-                Library Auditorium, MIT Manipal
+                Library Group Study Hall, MIT Manipal
               </span>
             </div>
             <div className="pl-10 flex flex-row">
