@@ -1,5 +1,6 @@
 import { Button } from '@nextui-org/react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import trophycup from '../images/whitetrophy.svg'
 
 export default function EventsBox() {
@@ -10,6 +11,7 @@ export default function EventsBox() {
                 <div className='text-center text-white'>
                     <h4 className='p-5 text-[#11A8E4] font-semibold lg:text-[3rem]'>For more information on the Events & Workshops:</h4>
                     <h4 className='p-5 font-bold lg:text-[2rem]'>Click below for AURORA's Ultimate Experience!</h4>
+                    <Link to='/events'>
                     <Button color="primary" size="lg" variant="shadow"
                         className="lg:w-[15rem] m-5"
                     >
@@ -18,6 +20,7 @@ export default function EventsBox() {
                             Events
                         </a>
                     </Button>
+                    </Link>
                 </div>
             </div>
         </div>

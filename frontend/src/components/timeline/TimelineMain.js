@@ -167,15 +167,15 @@ const TimelineMain = () => {
   ];
 
   const times = [
-    "3rd February, 2024: 05:30PM - 08:00PM \n 4th February, 2024 : 10:00AM - 12:30PM & 2:00PM - 4:30PM",
-    "3rd February, 2024: 05:30PM - 08:00PM \n 4th February, 2024 : 10:00AM - 12:30PM & 2:00PM - 4:30PM",
-    "5th February, 2024: 05:30PM - 08:00PM \n 6th February, 2024 : 05:30PM - 08:00PM ",
-    "5th February, 2024: 05:30PM - 08:00PM \n 6th February, 2024 : 05:30PM - 08:00PM ",
+    "3rd February, 2024: 05:00PM - 08:00PM \n 4th February, 2024 : 10:00AM - 12:30PM & 2:00PM - 4:30PM",
+    "3rd February, 2024: 05:00PM - 08:00PM \n 4th February, 2024 : 10:00AM - 12:30PM & 2:00PM - 4:30PM",
+    "5th February, 2024: 05:00PM - 08:00PM \n 6th February, 2024 : 05:00PM - 08:00PM ",
+    "5th February, 2024: 05:00PM - 08:00PM \n 6th February, 2024 : 05:00PM - 08:00PM ",
     "7th February, 2024: 12:00AM - 11:59PM",
-    "7th February, 2024: 05:30PM - 08:00PM \n 8th February, 2024 : 05:30PM - 08:00PM ",
-    "7th February, 2024: 05:30PM - 08:00PM \n 8th February, 2024 : 05:30PM - 08:00PM ",
-    "10th February, 2024: 05:30PM - 08:00PM \n 12th February, 2024 : 05:30PM - 08:00PM ",
-    "10th February, 2024: 05:30PM - 08:00PM \n ",
+    "7th February, 2024: 05:00PM - 08:00PM \n 8th February, 2024 : 05:00PM - 08:00PM ",
+    "7th February, 2024: 05:00PM - 08:00PM \n 8th February, 2024 : 05:00PM - 08:00PM ",
+    "10th February, 2024: 05:00PM - 08:00PM \n 12th February, 2024 : 05:00PM - 08:00PM ",
+    "10th February, 2024: 05:00PM - 08:00PM \n ",
     "1st February, 2024: 7:30PM Onwards \n 4th February, 2024 7:30PM Onwards",
 
     "11th February, 2024: 08:00AM - 10:00PM",
