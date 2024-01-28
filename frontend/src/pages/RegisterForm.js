@@ -10,7 +10,7 @@ import QRimg from '../images/QRimg.jpeg'
 import icon from '../images/Vector.svg'
 import formbg from '../images/reg-form-bg.png'
 import registraionNote from '../images/registration-page-note.svg'
-import regformtimeline from '../images/reg.svg'
+import regformtimeline from '../images/reg-timeline.svg'
 
 import AuroraText from '../assets/AURORA-24.svg'
 
