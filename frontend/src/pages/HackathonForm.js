@@ -561,7 +561,7 @@ function HackathonForm() {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-2 grid-rows-3 pl-10 pt-8">
+            {/* <div className="grid grid-cols-2 grid-rows-3 pl-10 pt-8">
               <div className="col-span-2 text-blue-500 text-2xl font-normal font-['Inter'] leading-normal">
                 Team Member 4 Details
               </div>
@@ -642,7 +642,7 @@ function HackathonForm() {
                   style={{ color: 'white' }}
                 />
               </div>
-            </div>
+            </div> */}
 
             <div className="grid grid-cols-1 grid-rows-2 p-10">
               <div className="text-blue-500 text-2xl font-normal font-['Inter'] leading-normal h-5 ">
