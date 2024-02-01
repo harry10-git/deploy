@@ -18,7 +18,7 @@ export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const loginwithgoogle = () => {
-    window.open("/auth/google/callback", "_self");
+    window.open("http://localhost:6005/auth/google/callback", "_self");
   };
 
   const [googleUserData, setGoogleUserData] = useState({});

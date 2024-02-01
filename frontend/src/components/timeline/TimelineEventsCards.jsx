@@ -5,7 +5,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import workshopsevents from "../../images/workshopsevents.svg";
 
-
 import gr from "../../images/Group.svg";
 import hecker from "../../images/Hacker-cuate-2 1.png";
 import calen from "../../images/calendar.svg";
@@ -15,7 +14,7 @@ import P2 from "../../images/ctf2nd.svg";
 import P3 from "../../images/ctf3rd.svg";
 import ctfevents from "../../images/ctfevents.png";
 import laptop from "../../images/laptop.svg";
-import submitchoices from '../../images/submitchoices.png';
+import submitchoices from "../../images/submitchoices.png";
 
 import W_iste2 from "../../images/AppDev.png";
 import W_gdsc from "../../images/ChatBot.png";
@@ -82,17 +81,16 @@ const images = [
 ];
 
 const names = [
-  'ACM MANIPAL',
-  'PROJECT DRONAID',
-  'MIST MANIPAL',
-  'ISTE MANIPAL',
-  'GDSC MANIPAL',
-  'ISTE MANIPAL',
-  'IE-MECH MANIPAL',
-  'IEEE MANIPAL',
-  'ASTRONOMY CLUB MANIPAL'
-
-]
+  "ACM MANIPAL",
+  "PROJECT DRONAID",
+  "MIST MANIPAL",
+  "ISTE MANIPAL",
+  "GDSC MANIPAL",
+  "ISTE MANIPAL",
+  "IE-MECH MANIPAL",
+  "IEEE MANIPAL",
+  "ASTRONOMY CLUB MANIPAL",
+];
 
 const modalComponents = Array.from(
   { length: 9 },
@@ -223,16 +221,19 @@ export default function TimelineEventsCards() {
   };
 
   const selectionNotify = () => {
-    toast.info("Remember, you can only select one Workshop in a particular time-slot!", {
-      position: "top-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-    });
+    toast.info(
+      "Remember, you can only select one Workshop in a particular time-slot!",
+      {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      }
+    );
   };
 
   const clearNotify = () => {
@@ -334,7 +335,7 @@ export default function TimelineEventsCards() {
     let timeSlot = eventID.substring(0, 3);
     let newRegistered = [...registered];
     var found;
-    if (newRegistered.length > 0){
+    if (newRegistered.length > 0) {
       for (let i = 0; i < newRegistered.length; i++) {
         found = 0;
         if (newRegistered[i].includes(timeSlot)) {
@@ -344,7 +345,9 @@ export default function TimelineEventsCards() {
           newRegistered.push(eventID);
           document.getElementById(eventID).checked = true;
           setRegistered(newRegistered);
-          if(found===1) {selectionNotify()}
+          if (found === 1) {
+            selectionNotify();
+          }
           break;
         } else if (i === newRegistered.length - 1 && found === 0) {
           newRegistered.push(eventID);
@@ -352,8 +355,7 @@ export default function TimelineEventsCards() {
           setRegistered(newRegistered);
         }
       }
-    }
-    else if (newRegistered.length === 0) {
+    } else if (newRegistered.length === 0) {
       newRegistered.push(eventID);
       document.getElementById(eventID).checked = true;
       setRegistered(newRegistered);
@@ -378,7 +380,9 @@ export default function TimelineEventsCards() {
                       <h4 className="text-white lg:text-[0.7rem] text-[0.6rem] p-1">
                         {dates[index]}
                       </h4>
-                      <h4 className="font-bold text-white lg:text-[1.1rem] p-1.5">{event[1]}</h4>
+                      <h4 className="font-bold text-white lg:text-[1.1rem] p-1.5">
+                        {event[1]}
+                      </h4>
                     </CardHeader>
                     <CardBody className="overflow-visible py-2 items-center ">
                       <Image
@@ -387,15 +391,33 @@ export default function TimelineEventsCards() {
                         src={images[index]}
                         width={270}
                       />
-                      <div className="mx-auto mt-3 flex lg:flex-row flex-col lg:gap-5 gap-2" >
-
+                      <div className="mx-auto mt-3 flex lg:flex-row flex-col lg:gap-5 gap-2">
                         <div className="checkwrapper">
-                          <label htmlFor={event[0]} id={"label_" + event} className="control event_label">
-                            <span>Select</span>
-                          </label>
-                          <input type="checkbox" id={event[0]} name={event[0]} className="toggle visualy-hidden event" onClick={() => { updateEvent(event[0]) }} />
+                          {index === 0 ? (
+                            <label className="control event_label">
+                              <span>Slot full</span>
+                            </label>
+                          ) : (
+                            <label
+                              htmlFor={event[0]}
+                              id={"label_" + event}
+                              className="control event_label"
+                            >
+                              <span>Select</span>
+                            </label>
+                          )}
+                          {index !== 0 && (
+                            <input
+                              type="checkbox"
+                              id={event[0]}
+                              name={event[0]}
+                              className="toggle visualy-hidden event"
+                              onClick={() => {
+                                updateEvent(event[0]);
+                              }}
+                            />
+                          )}
                         </div>
-
 
                         <Button
                           className="rounded-[25px]"
@@ -418,7 +440,7 @@ export default function TimelineEventsCards() {
                       )}
                     </CardBody>
                     <div className="text-center">
-                    <h4 className="text-white">BY: {names[index]}</h4>
+                      <h4 className="text-white">BY: {names[index]}</h4>
                     </div>
                   </Card>
                 </div>
@@ -427,37 +449,74 @@ export default function TimelineEventsCards() {
             {/* ctf stuff */}
             <div className="lg:p-16 p-0 text-white">
               <div className="" id="glasseffect2">
-                <div className="text-white  bg-center rounded-3xl lg:p-28 p-0" >
-                  <img src={ctfevents} alt="ggf" className="col-span-2 mx-auto" />
+                <div className="text-white  bg-center rounded-3xl lg:p-28 p-0">
+                  <img
+                    src={ctfevents}
+                    alt="ggf"
+                    className="col-span-2 mx-auto"
+                  />
                   <div className="grid  md:grid-cols-2 grid-cols-1 rounded-3xl ">
-
-
                     <div className="flex justify-center align-middle">
-                      <img className="m-auto mt-0 " alt="ess" src={hecker}></img>
+                      <img
+                        className="m-auto mt-0 "
+                        alt="ess"
+                        src={hecker}
+                      ></img>
                     </div>
                     <div className="flex-col justify-center align-middle p-3">
-                      <img className="lg:h-72 h-32 lg:w-72 object-center m-auto" alt="gsege" src={gr}></img>
+                      <img
+                        className="lg:h-72 h-32 lg:w-72 object-center m-auto"
+                        alt="gsege"
+                        src={gr}
+                      ></img>
                       <p className="text-center w-5/6 m-auto lg:text-lg text-xs">
-                        Chronicles of the Cyber Treasury. A narrative driven CTF. As a digital explorer navigate diverse challenges,  unveil hidden paths and unlock treasury secrets to enhance your cyber security skills in an immersive a Odyssey.
+                        Chronicles of the Cyber Treasury. A narrative driven
+                        CTF. As a digital explorer navigate diverse challenges,
+                        unveil hidden paths and unlock treasury secrets to
+                        enhance your cyber security skills in an
+                        immersive a Odyssey.
                       </p>
                     </div>
                     <div className="flex-col flex m-auto justify-center align-middle md:text-3xl text-xl p-6">
                       <div className="pt-4 pl-10 flex flex-row">
-                        <img src={calen} alt="gfw" className="lg:w-fit w-[1rem]"></img>
-                        <span className="pt-4 pl-10 [font-family:'Inter-Medium',Helvetica] font-semibold lg:text-lg text-[0.8rem]"> Date: <br className="lg:hidden"></br>7th Feb</span>
+                        <img
+                          src={calen}
+                          alt="gfw"
+                          className="lg:w-fit w-[1rem]"
+                        ></img>
+                        <span className="pt-4 pl-10 [font-family:'Inter-Medium',Helvetica] font-semibold lg:text-lg text-[0.8rem]">
+                          {" "}
+                          Date: <br className="lg:hidden"></br>7th Feb
+                        </span>
                       </div>
                       <div className="pt-6 pl-10 flex flex-row">
-                        <img src={clock} alt="sgse" className="lg:w-fit w-[1rem]"></img>
-                        <span className="pt-1 pl-10 [font-family:'Inter-Medium',Helvetica] font-semibold lg:text-lg text-[0.8rem]"> Time: 00:00 hrs - 23:59 hrs</span>
+                        <img
+                          src={clock}
+                          alt="sgse"
+                          className="lg:w-fit w-[1rem]"
+                        ></img>
+                        <span className="pt-1 pl-10 [font-family:'Inter-Medium',Helvetica] font-semibold lg:text-lg text-[0.8rem]">
+                          {" "}
+                          Time: 00:00 hrs - 23:59 hrs
+                        </span>
                       </div>
                       <div className="pt-6 pl-10 flex flex-row">
-                        <img src={laptop} alt="gesags" className="lg:w-fit w-[1rem]"></img>
-                        <span className="pt-2 pl-10 [font-family:'Inter-Medium',Helvetica] font-semibold lg:text-lg text-[0.8rem]"> Mode: Online</span>
+                        <img
+                          src={laptop}
+                          alt="gesags"
+                          className="lg:w-fit w-[1rem]"
+                        ></img>
+                        <span className="pt-2 pl-10 [font-family:'Inter-Medium',Helvetica] font-semibold lg:text-lg text-[0.8rem]">
+                          {" "}
+                          Mode: Online
+                        </span>
                       </div>
                     </div>
                     <div className="p-6 justify-center align-middle">
                       <div className="[text-shadow:0px_4px_37.2px_#0070f3] [font-family:'Inter-Bold',Helvetica] font-bold text-[#0070f3] md:text-[58px] text-[35px] tracking-[0] leading-[normal]">
-                        <h1 className="text-center p-6 text-[#0070f3]">Cash Prizes</h1>
+                        <h1 className="text-center p-6 text-[#0070f3]">
+                          Cash Prizes
+                        </h1>
                       </div>
                       <div className="flex flex-col items-center justify-center">
                         <div className="p-6 flex-col items-center">
@@ -470,16 +529,30 @@ export default function TimelineEventsCards() {
                           <div className="p-6 flex-col items-center">
                             <img className="w-36 h-36" src={P3} alt=""></img>
                           </div>
-                          <h4 className="text-white text-2xl font-mono">Organised by MIST Manipal</h4>
+                          <h4 className="text-white text-2xl font-mono">
+                            Organised by MIST Manipal
+                          </h4>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="checkwrapper mx-auto lg:mb-0 mb-8">
-                    <label htmlFor="TS6_E1_CTF" id={"label_" + "TS6_E1_CTF"} className="control event_label">
+                    <label
+                      htmlFor="TS6_E1_CTF"
+                      id={"label_" + "TS6_E1_CTF"}
+                      className="control event_label"
+                    >
                       <span>Select</span>
                     </label>
-                    <input type="checkbox" id="TS6_E1_CTF" name={"TS6_E1_CTF"} className="toggle visualy-hidden event" onClick={() => { updateEvent("TS6_E1_CTF") }} />
+                    <input
+                      type="checkbox"
+                      id="TS6_E1_CTF"
+                      name={"TS6_E1_CTF"}
+                      className="toggle visualy-hidden event"
+                      onClick={() => {
+                        updateEvent("TS6_E1_CTF");
+                      }}
+                    />
                   </div>
                 </div>
               </div>
@@ -489,14 +562,26 @@ export default function TimelineEventsCards() {
             <div className="grid event-submit">
               <img src={submitchoices} alt="" className="mx-auto" />
               <div className="mx-auto">
-                <Button color="primary" size="sm" variant="shadow"
+                <Button
+                  color="primary"
+                  size="sm"
+                  variant="shadow"
                   className="lg:w-[15rem] lg:m-5 m-1"
-                  onClick={(e) => { handleSubmit(e) }}>
+                  onClick={(e) => {
+                    handleSubmit(e);
+                  }}
+                >
                   Submit
                 </Button>
-                <Button color="danger" size="sm" variant="shadow"
+                <Button
+                  color="danger"
+                  size="sm"
+                  variant="shadow"
                   className="lg:w-[15rem] lg:m-5 m-1"
-                  onClick={(e) => { clearSelection(e) }}>
+                  onClick={(e) => {
+                    clearSelection(e);
+                  }}
+                >
                   Clear
                 </Button>
               </div>
