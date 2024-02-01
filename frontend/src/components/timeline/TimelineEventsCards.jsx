@@ -393,29 +393,29 @@ export default function TimelineEventsCards() {
                       />
                       <div className="mx-auto mt-3 flex lg:flex-row flex-col lg:gap-5 gap-2">
                         <div className="checkwrapper">
-                          {index === 0 ? (
+                          {index === 0 || index === 2 || index === 4 ? (
                             <label className="control event_label">
                               <span>Slot full</span>
                             </label>
                           ) : (
-                            <label
-                              htmlFor={event[0]}
-                              id={"label_" + event}
-                              className="control event_label"
-                            >
-                              <span>Select</span>
-                            </label>
-                          )}
-                          {index !== 0 && (
-                            <input
-                              type="checkbox"
-                              id={event[0]}
-                              name={event[0]}
-                              className="toggle visualy-hidden event"
-                              onClick={() => {
-                                updateEvent(event[0]);
-                              }}
-                            />
+                            <>
+                              <label
+                                htmlFor={event[0]}
+                                id={"label_" + event}
+                                className="control event_label"
+                              >
+                                <span>Select</span>
+                              </label>
+                              <input
+                                type="checkbox"
+                                id={event[0]}
+                                name={event[0]}
+                                className="toggle visualy-hidden event"
+                                onClick={() => {
+                                  updateEvent(event[0]);
+                                }}
+                              />
+                            </>
                           )}
                         </div>
 
