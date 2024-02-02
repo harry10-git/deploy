@@ -393,7 +393,7 @@ export default function TimelineEventsCards() {
                       />
                       <div className="mx-auto mt-3 flex lg:flex-row flex-col lg:gap-5 gap-2">
                         <div className="checkwrapper">
-                          {index === 0 || index === 2 || index === 4 ? (
+                          {index === 0 || index === 2 || index === 4 || index === 8 ? (
                             <label className="control event_label">
                               <span>Slot full</span>
                             </label>
