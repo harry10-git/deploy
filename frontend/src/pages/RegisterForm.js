@@ -496,8 +496,8 @@ export default function RegisterForm() {
     //     <ToastContainer />
     //   </div>
     // </div>
-    <div className='flex justify-center items-center'>
-      <h2 className='text-white text-2xl'>Registrations are closed now !!</h2>
+    <div className='flex justify-center items-center min-h-screen'>
+      <h2 className='text-white text-4xl'>Registrations are closed now !!</h2>
     </div>
   )
 }
