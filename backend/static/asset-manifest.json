@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1413f956.css",
-    "main.js": "/static/js/main.f49d4412.js",
+    "main.css": "/static/css/main.6d4f7715.css",
+    "main.js": "/static/js/main.ff52fa68.js",
     "static/media/linesbg.png": "/static/media/linesbg.489c86cb5ac91fc03436.png",
     "static/media/Frame 61 1.png": "/static/media/Frame 61 1.cda9d3ca9242ffa21f7b.png",
     "static/media/Frame 62 1.png": "/static/media/Frame 62 1.5aec176bbe9eda1ffc36.png",
@@ -30,6 +30,7 @@
     "static/media/aboutbox2new.png.jpg": "/static/media/aboutbox2new.png.44585e17548ca1915ba9.jpg",
     "static/media/W-iste1.svg": "/static/media/W-iste1.b5ce5fc99d714ec60f50686d29186a8d.svg",
     "static/media/ChatBot.svg": "/static/media/ChatBot.bc08bcec7ad06af059cd79db8cc2e090.svg",
+    "static/media/MTTNWhite.png": "/static/media/MTTNWhite.d99d08504df1f8be9257.png",
     "static/media/spons8.svg": "/static/media/spons8.6aa4d2729cb53afadcb928ef0b35ea02.svg",
     "static/media/Group.svg": "/static/media/Group.6c57ac74c91ab089bf252b9691be670a.svg",
     "static/media/aditi.jpg": "/static/media/aditi.1290fe8f74fc32c9cf0d.jpg",
@@ -106,11 +107,11 @@
     "static/media/linkedin.svg": "/static/media/linkedin.b20cb6d2cddc5f78be3e83ad55e06a41.svg",
     "static/media/x.svg": "/static/media/x.132c11af13eaabaec524ba1fda5bfc8a.svg",
     "static/media/laptop.svg": "/static/media/laptop.d6cd5bd01cff0fdbdd2f3033011bc615.svg",
-    "main.1413f956.css.map": "/static/css/main.1413f956.css.map",
-    "main.f49d4412.js.map": "/static/js/main.f49d4412.js.map"
+    "main.6d4f7715.css.map": "/static/css/main.6d4f7715.css.map",
+    "main.ff52fa68.js.map": "/static/js/main.ff52fa68.js.map"
   },
   "entrypoints": [
-    "static/css/main.1413f956.css",
-    "static/js/main.f49d4412.js"
+    "static/css/main.6d4f7715.css",
+    "static/js/main.ff52fa68.js"
   ]
 }
