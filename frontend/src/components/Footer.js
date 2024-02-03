@@ -16,6 +16,7 @@ export default function Footer() {
     "aditi26shr@gmail.com",
     "prateekanand.work@gmail.com",
     "tanishakar1906@gmail.com",
+    "harryraj1413@gmail.com"
   ];
 
   const getGoogleData = async () => {

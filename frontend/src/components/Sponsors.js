@@ -7,6 +7,7 @@ import spons5 from "../images/spons5.svg";
 import spons6 from "../images/spons6.svg";
 import spons8 from "../images/spons8.svg";
 import spons9 from "../images/spons9.svg";
+import MTTN from '../images/MTTNWhite.png'
 import TitleStuff from "./Title_Stuff";
 import STW from "../images/stw.png";
 
@@ -42,6 +43,13 @@ export default function Sponsors() {
         <img src={spons6} alt="h" className="lg:w-full w-[8rem]" />
         <img src={spons8} alt="h" className="lg:w-full w-[8rem]" />
         <img src={spons9} alt="h" className="lg:w-full w-[8rem" />
+      </div>
+
+      <div className="flex items-center justify-center gap-8 lg:gap-12 mt-6 lg:mt-10">
+      <h1 className="text-2xl lg:text-4xl font-global text-white px-4 border-r-1 border-white">Official <br /> Media <br /> Partner</h1>
+
+      <img className="h-28 lg:h-36" src={MTTN} alt="mttn" />
+
       </div>
     </div>
   );

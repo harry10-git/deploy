@@ -36,28 +36,32 @@ export default function Timer() {
         <div className="flex flex-wrap justify-center gap-10 glow">
           <div className="text-center outer-circle">
             <h4 className="glowing-text border-white border-2 rounded-full p-10 font-bold text-5xl text-white">
-              {timeRemaining.days.toString().padStart(2, "0")}
+              {/* {timeRemaining.days.toString().padStart(2, "0")} */}
+              0
             </h4>
             <h5 className="text-3xl text-white mt-2">Days</h5>
           </div>
 
           <div className="text-center outer-circle">
             <h4 className="glowing-text border-white border-2 rounded-full p-10 font-bold text-5xl text-white">
-              {timeRemaining.hours.toString().padStart(2, "0")}
+              {/* {timeRemaining.hours.toString().padStart(2, "0")} */}
+              0
             </h4>
             <h5 className="text-3xl text-white mt-2">Hours</h5>
           </div>
 
           <div className="text-center outer-circle">
             <h4 className="glowing-text border-white border-2 rounded-full p-10 font-bold text-5xl text-white">
-              {timeRemaining.minutes.toString().padStart(2, "0")}
+              {/* {timeRemaining.minutes.toString().padStart(2, "0")} */}
+              0
             </h4>
             <h5 className="text-3xl text-white mt-2">Minutes</h5>
           </div>
 
           <div className="text-center outer-circle">
             <h4 className="glowing-text border-white border-2 rounded-full p-10 font-bold text-5xl text-white">
-              {timeRemaining.seconds.toString().padStart(2, "0")}
+              {/* {timeRemaining.seconds.toString().padStart(2, "0")} */}
+              0
             </h4>
             <h5 className="text-3xl text-white mt-2">Seconds</h5>
           </div>
