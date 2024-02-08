@@ -1,5 +1,5 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { AboutHackathon } from "../components/AboutHackathon";
+// import { AboutHackathon } from "../components/AboutHackathon";
 import { MainHackathon } from "../components/MainHackathon";
 import { PrizesHackathon } from "../components/PrizesHackathon";
 import Mountain from "../images/hackathonpage.svg";
@@ -28,7 +28,7 @@ function HackathonPage() {
           <MainHackathon />
         </ParallaxLayer>
         <ParallaxLayer offset={1} className="min-h-fit">
-          <AboutHackathon />
+          {/* <AboutHackathon /> */}
           <PrizesHackathon />
           <div className="flex flex-col justify-center items-center text-center my-9">
             <div className="border-1 border-white px-4 py-2 backdrop-blur-xl">
